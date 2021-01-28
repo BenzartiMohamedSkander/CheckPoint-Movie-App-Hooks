@@ -1,23 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import {moviesData} from './Components/MoviesData'
+
+import React, { useState } from "react";
+
+
+import Main from './Components/Main'
+import Header from './Components/Header/Header'
 
 function App() {
+  const [movies, setMovies] = useState(moviesData);  
+
+const [searchInput, setSearchInput] = useState("");
+const [rateValue, setRateValue] = useState(0);
+
+const addNewMovie=(newMovie)=>{setMovies([...movies,newMovie])}
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header setSearchInput={setSearchInput} setRateValue={setRateValue} rateValue={rateValue}/>
+      {/* <Main movies={movies.filter((movie) =>(movie.rating >= 3))  }    addNewMovie={addNewMovie}
+ /> */}
+ <Main movies={movies.filter((movie) =>
+   (movie.name.toLowerCase().includes(searchInput.toLowerCase().trim()) && (movie.rating >= rateValue)) ) }    addNewMovie={addNewMovie}
+ />
     </div>
   );
 }
