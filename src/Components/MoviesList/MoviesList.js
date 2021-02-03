@@ -1,15 +1,33 @@
 import React from 'react'
-import MovcieCard from '../MovieCard/MovieCard'
+
+import Trailer from '../Trailer/Trailer'
 import './MoviesList.css'
 
+import { Route, Switch } from "react-router-dom";
+import MovieCard from '../MovieCard/MovieCard';
+import TestComponent from '../TestComponent';
+
 function MoviesList({movies}) {
+ 
     return (
         <div className="moviesList">
             {
                 movies.map((movie,i) =>(
-                <MovcieCard movie={movie}  key={i}/>) )
+                <MovieCard movie={movie}  key={i}/>) )
             }
+
+
+
+
+
+
+
+
+
         </div>
+
+
+
     )
 }
 

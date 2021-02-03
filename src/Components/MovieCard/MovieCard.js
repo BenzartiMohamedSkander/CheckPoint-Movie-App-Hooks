@@ -1,16 +1,22 @@
 import React from 'react'
 import './MovieCard.css'
 import Rate from '../Rate/Rate'
-function MovieCard({movie : {name, image, date, description, rating }},key) {
+import {Link } from "react-router-dom";
+
+
+
+function MovieCard({movie : {id,name, image, date, description, rating }},key) {
+ 
+
     return (
         <div>
             
 
-
+            <Link to={`/${id}`}>
 
             <div className="container" >
-               {/* <h2 >Profile Page</h2>    
-               <br/><br/> */}
+            
+
                <div className="card" style={{width:"275px", height:"680px"}}>
                    <Rate rating={rating}/>
                  <img className="card-img-top" src={image} alt="Card" style={{width:"100%", height:"55%"}}/>
@@ -23,7 +29,7 @@ function MovieCard({movie : {name, image, date, description, rating }},key) {
                  </div>
                </div>
                <br/>
-    
+
                 <p> </p>
              </div>
 
@@ -31,7 +37,7 @@ function MovieCard({movie : {name, image, date, description, rating }},key) {
 
 
 
-
+</Link>
 
 
 

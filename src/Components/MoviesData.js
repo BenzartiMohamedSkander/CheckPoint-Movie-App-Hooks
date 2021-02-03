@@ -1,6 +1,6 @@
 export const moviesData = [
     {
-      id: Math.random(),
+      id: 1,
       image: "https://www.geekqc.ca/wp-content/uploads/2018/01/Premi%C3%A8re-affiche-du-nouveau-Predator-RDV-le-15-ao%C3%BBt-2018..jpg",
       rating: 5,
       name: "PRED4TOR",
@@ -9,7 +9,7 @@ export const moviesData = [
         "The surviving members of the resistance face the First Order once again",
     },
     {
-      id: Math.random(),
+      id: 2,
       image: "https://assets.vice.com/content-images/contentimage/no-slug/5e15ffbed9af7d3ec6eb186522ff02e2.jpg",
       rating: 4,
       name: "BikerBoyz",
@@ -18,7 +18,7 @@ export const moviesData = [
         "The Avengers and their allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos.",
     },
     {
-      id: Math.random(),
+      id:3,
       image: "https://www.cnewyork.net/wp-content/uploads/2016/02/Il-etait-une-fois-en-amerique-affiche.jpg",
       rating: 1,
       name: "Il Etait Une Fois En Amerique",
@@ -27,7 +27,7 @@ export const moviesData = [
         "Anna, Elsa, Kristoff, Olaf and Sven leave Arendelle to travel to an ancient, autumn-bound forest of an enchanted land.",
     },
     {
-      id: Math.random(),
+      id: 4,
       image:
         "https://www.telerama.fr/sites/tr_master/files/sheet_media/movie/7_800376.jpg",
       rating: 3,
@@ -37,7 +37,7 @@ export const moviesData = [
         "The adventures of writer Newt Scamander in New York's secret community of wizards",
     },
     {
-      id: Math.random(),
+      id: 5,
       image:
         "https://www.speedway.fr/img/contentpage/1784/aube-sauvage-de1d9.jpg",
       rating: 2,
